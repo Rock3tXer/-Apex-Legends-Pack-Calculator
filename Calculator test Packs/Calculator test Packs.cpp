@@ -918,8 +918,9 @@ int main() {
 	battlepass4();
 	SetConsoleTextAttribute(color, 8);
 	battlepass5();
-	SetConsoleTextAttribute(color, 14);
+	SetConsoleTextAttribute(color, 3);
 	quest1();
+	SetConsoleTextAttribute(color, 14);
 	event1();
 	event2();
 	event3();
@@ -930,28 +931,115 @@ int main() {
 	//Heirloom percentage
 	final = (packs + bp1 + bp2 + bp3 + bp4 + purch + event10 + event20 + event30 + event40 + bp5 + q10);
 	if (final >= 501) {
-		SetConsoleTextAttribute(color, 5);
-		final = final - 500;
-		cout << "####################################################" << endl;
-		cout << "#           You alredy had one heirloom            #" << endl;
-		cout << "#      This means you opened more then 500 packs   #" << endl;
-		cout << "####################################################" << endl;
-		heirloom = (final / 5);
-		SetConsoleTextAttribute(color, 10);
-		cout << "####################################################" << endl;
-		cout << "#                    Apex Packs                    #" << endl;
-		cout << "####################################################" << endl;
-		cout << "You already had " << final << " packs." << "That's " << heirloom << " % from 500" << endl;
-		cout << "####################################################" << endl;
-	}
-	else {
-		heirloom = (final / 5);
-		SetConsoleTextAttribute(color, 10);
-		cout << "####################################################" << endl;
-		cout << "#                    Apex Packs                    #" << endl;
-		cout << "####################################################" << endl;
-		cout << "You already had " << final << " packs." << "That's " << heirloom << " % from 500" << endl;
-		cout << "####################################################" << endl;
-	}
+		if (final >= 3001) {
+			SetConsoleTextAttribute(color, 5);
+			final = final - 3000;
+			cout << "####################################################" << endl;
+			cout << "#           You alredy had six heirlooms           #" << endl;
+			cout << "#      This means you opened more then 3000 packs   #" << endl;
+			cout << "####################################################" << endl;
+			heirloom = (final / 5);
+			SetConsoleTextAttribute(color, 10);
+			cout << "####################################################" << endl;
+			cout << "#                    Apex Packs                    #" << endl;
+			cout << "####################################################" << endl;
+			cout << "You already had " << final << " packs." << "That's " << heirloom << " % from 500" << endl;
+			cout << "####################################################" << endl;
+		}
+		else {
+			if (final >= 2501) {
+				SetConsoleTextAttribute(color, 5);
+				final = final - 2500;
+				cout << "####################################################" << endl;
+				cout << "#           You alredy had five heirlooms          #" << endl;
+				cout << "#      This means you opened more then 2500 packs   #" << endl;
+				cout << "####################################################" << endl;
+				heirloom = (final / 5);
+				SetConsoleTextAttribute(color, 10);
+				cout << "####################################################" << endl;
+				cout << "#                    Apex Packs                    #" << endl;
+				cout << "####################################################" << endl;
+				cout << "You already had " << final << " packs." << "That's " << heirloom << " % from 500" << endl;
+				cout << "####################################################" << endl;
+			}
+			else {
+				if (final >= 2001) {
+					SetConsoleTextAttribute(color, 5);
+					final = final - 2000;
+					cout << "####################################################" << endl;
+					cout << "#          You alredy had four heirlooms           #" << endl;
+					cout << "#      This means you opened more then 2000 packs   #" << endl;
+					cout << "####################################################" << endl;
+					heirloom = (final / 5);
+					SetConsoleTextAttribute(color, 10);
+					cout << "####################################################" << endl;
+					cout << "#                    Apex Packs                    #" << endl;
+					cout << "####################################################" << endl;
+					cout << "You already had " << final << " packs." << "That's " << heirloom << " % from 500" << endl;
+					cout << "####################################################" << endl;
+				}
+				else {
+					if (final >= 1501) {
+						SetConsoleTextAttribute(color, 5);
+						final = final - 1500;
+						cout << "####################################################" << endl;
+						cout << "#          You alredy had three heirlooms          #" << endl;
+						cout << "#      This means you opened more then 1500 packs   #" << endl;
+						cout << "####################################################" << endl;
+						heirloom = (final / 5);
+						SetConsoleTextAttribute(color, 10);
+						cout << "####################################################" << endl;
+						cout << "#                    Apex Packs                    #" << endl;
+						cout << "####################################################" << endl;
+						cout << "You already had " << final << " packs." << "That's " << heirloom << " % from 500" << endl;
+						cout << "####################################################" << endl;
+					}
+					else {
+						if (final >= 1001) {
+							SetConsoleTextAttribute(color, 5);
+							final = final - 1000;
+							cout << "####################################################" << endl;
+							cout << "#           You alredy had two heirlooms           #" << endl;
+							cout << "#      This means you opened more then 1000 packs   #" << endl;
+							cout << "####################################################" << endl;
+							heirloom = (final / 5);
+							SetConsoleTextAttribute(color, 10);
+							cout << "####################################################" << endl;
+							cout << "#                    Apex Packs                    #" << endl;
+							cout << "####################################################" << endl;
+							cout << "You already had " << final << " packs." << "That's " << heirloom << " % from 500" << endl;
+							cout << "####################################################" << endl;
+						}
+						else {
+							if (final >= 501) {
+								SetConsoleTextAttribute(color, 5);
+								final = final - 500;
+								cout << "####################################################" << endl;
+								cout << "#           You alredy had one heirloom            #" << endl;
+								cout << "#      This means you opened more then 500 packs   #" << endl;
+								cout << "####################################################" << endl;
+								heirloom = (final / 5);
+								SetConsoleTextAttribute(color, 10);
+								cout << "####################################################" << endl;
+								cout << "#                    Apex Packs                    #" << endl;
+								cout << "####################################################" << endl;
+								cout << "You already had " << final << " packs." << "That's " << heirloom << " % from 500" << endl;
+								cout << "####################################################" << endl;
+							}
+							else {
+								heirloom = (final / 5);
+								SetConsoleTextAttribute(color, 10);
+								cout << "####################################################" << endl;
+								cout << "#                    Apex Packs                    #" << endl;
+								cout << "####################################################" << endl;
+								cout << "You already had " << final << " packs." << "That's " << heirloom << " % from 500" << endl;
+								cout << "####################################################" << endl;
+							}
+						}
+					}
+				}
+			}
+		}
+	} 
 	restarting();
 }
