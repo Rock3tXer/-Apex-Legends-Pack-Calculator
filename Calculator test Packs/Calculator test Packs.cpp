@@ -7,7 +7,7 @@ using namespace std;
 
 
 //Decleration
-int lvl, bp1, bp2, bp3, bp4, bp5, packs, tier, purch, event10, event20, event30, event40, q1, q10, final;
+int lvl, bp1, bp2, bp3, bp4, bp5, packs, tier, purch, event10, event20, event30, event40, event50, q1, q10, final;
 void level();
 void battlepass1();
 void battlepass2();
@@ -20,6 +20,7 @@ void event1();
 void event2();
 void event3();
 void event4();
+void event5();
 int restarting();
 int main();
 
@@ -98,10 +99,10 @@ void battlepass1() {
 	cout << "####################################################" << endl;
 	cout << "                BattlePass Season 1                 " << endl;
 	cout << "\n";
-	cout << "What tier you have? : "; cin >> tier;
+	cout << "What tier did you have? [max. 110]: "; cin >> tier;
 
 	if (tier >= 0 && tier <= 110) {
-		cout << "Did u buy this season BP? [y/n] : "; cin >> buy;
+		cout << "Did u buy season 1 BP? [y/n] : "; cin >> buy;
 		if (buy == "y") {
 			if (tier >= 93) {
 				bp1 = 12;
@@ -151,7 +152,7 @@ void battlepass1() {
 															bp1 = 1;
 														}
 														else {
-															cout << "You don't have any packs from this season BP." << endl;
+															cout << "You don't have any packs from season 1 BP." << endl;
 															cout << "####################################################" << endl;
 															cout << "\n";
 														}
@@ -192,7 +193,7 @@ void battlepass1() {
 								bp1 = 1;
 							}
 							else {
-								cout << "You don't have any packs from this season BP." << endl;
+								cout << "You don't have any packs from season 1 BP." << endl;
 								cout << "####################################################" << endl;
 								cout << "\n";
 							}
@@ -225,10 +226,10 @@ void battlepass2() {
 	cout << "####################################################" << endl;
 	cout << "                BattlePass Season 2                 " << endl;
 	cout << "\n";
-	cout << "What tier you have? : "; cin >> tier;
+	cout << "What tier did you have? [max. 110]: "; cin >> tier;
 
 	if (tier >= 0 && tier <= 110) {
-		cout << "Did u buy this season BP? [y/n] : "; cin >> buy;
+		cout << "Did u buy season 2 BP? [y/n] : "; cin >> buy;
 		if (buy == "y") {
 			if (tier >= 92) {
 				bp2 = 11;
@@ -274,7 +275,7 @@ void battlepass2() {
 														bp2 = 1;
 													}
 														else {
-															cout << "You don't have any packs from this season BP." << endl;
+															cout << "You don't have any packs from season 2 BP." << endl;
 															cout << "####################################################" << endl;
 															cout << "\n";
 														}
@@ -315,7 +316,7 @@ void battlepass2() {
 								bp2 = 1;
 							}
 							else {
-								cout << "You don't have any packs from this season BP." << endl;
+								cout << "You don't have any packs from season 2 BP." << endl;
 								cout << "####################################################" << endl;
 								cout << "\n";
 							}
@@ -346,7 +347,7 @@ void battlepass3() {
 	cout << "####################################################" << endl;
 	cout << "                BattlePass Season 3                 " << endl;
 	cout << "\n";
-	cout << "What tier you have? : "; cin >> tier;
+	cout << "What tier did you have? [max. 110]: "; cin >> tier;
 
 	if (tier >= 0 && tier <= 110) {
 		cout << "Did u buy this season BP? [y/n] : "; cin >> buy;
@@ -399,7 +400,7 @@ void battlepass3() {
 															bp3 = 1;
 														}
 														else {
-															cout << "You don't have any packs from this season BP." << endl;
+															cout << "You don't have any packs from season 3 BP." << endl;
 															cout << "####################################################" << endl;
 															cout << "\n";
 														}
@@ -441,7 +442,7 @@ void battlepass3() {
 							bp3 = 1;
 						}
 						else {
-							cout << "You don't have any packs from this season BP." << endl;
+							cout << "You don't have any packs from season 3 BP." << endl;
 							cout << "####################################################" << endl;
 							cout << "\n";
 						}
@@ -473,7 +474,7 @@ void battlepass4() {
 	cout << "####################################################" << endl;
 	cout << "                BattlePass Season 4                 " << endl;
 	cout << "\n";
-	cout << "What tier you have? : "; cin >> tier;
+	cout << "What tier did you have? [max. 110]: "; cin >> tier;
 
 	if (tier >= 0 && tier <= 110) {
 		cout << "Did u buy this season BP? [y/n] : "; cin >> buy;
@@ -526,7 +527,7 @@ void battlepass4() {
 															bp4 = 1;
 														}
 														else {
-															cout << "You don't have any packs from this season BP." << endl;
+															cout << "You don't have any packs from season 4 BP." << endl;
 															cout << "####################################################" << endl;
 															cout << "\n";
 														}
@@ -568,7 +569,7 @@ void battlepass4() {
 							bp4 = 1;
 						}
 						else {
-							cout << "You don't have any packs from this season BP." << endl;
+							cout << "You don't have any packs from season 4 BP." << endl;
 							cout << "####################################################" << endl;
 							cout << "\n";
 						}
@@ -603,7 +604,7 @@ void battlepass5() {
 	cout << "####################################################" << endl;
 	cout << "                BattlePass Season 5                 " << endl;
 	cout << "\n";
-	cout << "What tier you have? : "; cin >> tier;
+	cout << "What tier do you have? [max. 110]: "; cin >> tier;
 
 	if (tier >= 0 && tier <= 110) {
 		cout << "Did u buy this season BP? [y/n] : "; cin >> buy;
@@ -664,7 +665,7 @@ void battlepass5() {
 																	bp5 = 1;
 																}
 																else {
-		                                                         	cout << "You don't have any packs from this season BP." << endl;
+		                                                         	cout << "You don't have any packs from season 5 BP." << endl;
 			                                                        cout << "####################################################" << endl;
 			                                                        cout << "\n";
 																}
@@ -717,7 +718,7 @@ void battlepass5() {
 									bp5 = 1;
 								}
 								else {
-									cout << "You don't have any packs from this season BP." << endl;
+									cout << "You don't have any packs from season 5 BP." << endl;
 									cout << "####################################################" << endl;
 									cout << "\n";
 								}
@@ -747,7 +748,7 @@ void quest1() {
 	cout << "                 Broken ghost quest                 " << endl;
 	cout << "                      Season 5                      " << endl;
 	cout << "####################################################" << endl;
-	cout << "How many quests did you unlock? : "; cin >> q1;
+	cout << "How many quests did you unlock? [max. 10]: "; cin >> q1;
 	if (q1 == 10) {
 		q10 = 9;
 	}
@@ -815,7 +816,7 @@ void event1() {
 	cout << "####################################################" << endl;
 	cout << "                  Iron Crown Event                  " << endl;
 	cout << "####################################################" << endl;
-	cout << "How many packs did you buy? : "; cin >> event10;
+	cout << "How many packs did you buy? [max. 24]: "; cin >> event10;
 	if (event10 > 24) {
 		cout << "That's imposible u could get max 24packs.";
 		restarting();
@@ -829,8 +830,8 @@ void event2() {
 	cout << "####################################################" << endl;
 	cout << "         Fight or Fright Event (Halloween)          " << endl;
 	cout << "####################################################" << endl;
-	cout << "How many packs did you buy? : "; cin >> event20;
-	if (event10 > 24) {
+	cout << "How many packs did you buy? [max. 24]: "; cin >> event20;
+	if (event20 > 24) {
 		cout << "That's imposible u could get max 24packs.";
 		restarting();
 	}
@@ -843,8 +844,8 @@ void event3() {
 	cout << "####################################################" << endl;
 	cout << "            Hollo-Bash Event (Christmas)            " << endl;
 	cout << "####################################################" << endl;
-	cout << "How many packs did you buy? : "; cin >> event30;
-	if (event10 > 24) {
+	cout << "How many packs did you buy? [max. 24]: "; cin >> event30;
+	if (event30 > 24) {
 		cout << "That's imposible u could get max 24packs.";
 		restarting();
 	}
@@ -857,8 +858,22 @@ void event4() {
 	cout << "####################################################" << endl;
 	cout << "               System Overdrive Event               " << endl;
 	cout << "####################################################" << endl;
-	cout << "How many packs did you buy? : "; cin >> event40;
-	if (event10 > 24) {
+	cout << "How many packs did you buy? [max. 24]: "; cin >> event40;
+	if (event40 > 24) {
+		cout << "That's imposible u could get max 24packs.";
+		restarting();
+	}
+	cout << "####################################################" << endl;
+	cout << "\n";
+}
+
+void event5() {
+	cout << "\n";
+	cout << "####################################################" << endl;
+	cout << "                Lost Treasures Event                " << endl;
+	cout << "####################################################" << endl;
+	cout << "How many packs did you buy? [max. 24]: "; cin >> event50;
+	if (event50 > 24) {
 		cout << "That's imposible u could get max 24packs.";
 		restarting();
 	}
@@ -925,18 +940,34 @@ int main() {
 	event2();
 	event3();
 	event4();
+	event5();
 	SetConsoleTextAttribute(color, 3);
 	buyed();
 
 	//Heirloom percentage
-	final = (packs + bp1 + bp2 + bp3 + bp4 + purch + event10 + event20 + event30 + event40 + bp5 + q10);
-	if (final >= 501) {
+	final = (packs + bp1 + bp2 + bp3 + bp4 + bp5 + purch + event10 + event20 + event30 + event40 + event50 + q10);
+	if (final >= 3501) {
+		SetConsoleTextAttribute(color, 5);
+		final = final - 3500;
+		cout << "####################################################" << endl;
+		cout << "#          You alredy had seven heirlooms          #" << endl;
+		cout << "#     This means you opened more then 3500 packs   #" << endl;
+		cout << "####################################################" << endl;
+		heirloom = (final / 5);
+		SetConsoleTextAttribute(color, 10);
+		cout << "####################################################" << endl;
+		cout << "#                    Apex Packs                    #" << endl;
+		cout << "####################################################" << endl;
+		cout << "You already had " << final << " packs." << "That's " << heirloom << " % from 500" << endl;
+		cout << "####################################################" << endl;
+	}
+	else {
 		if (final >= 3001) {
 			SetConsoleTextAttribute(color, 5);
 			final = final - 3000;
 			cout << "####################################################" << endl;
 			cout << "#           You alredy had six heirlooms           #" << endl;
-			cout << "#      This means you opened more then 3000 packs   #" << endl;
+			cout << "#     This means you opened more then 3000 packs   #" << endl;
 			cout << "####################################################" << endl;
 			heirloom = (final / 5);
 			SetConsoleTextAttribute(color, 10);
@@ -952,7 +983,7 @@ int main() {
 				final = final - 2500;
 				cout << "####################################################" << endl;
 				cout << "#           You alredy had five heirlooms          #" << endl;
-				cout << "#      This means you opened more then 2500 packs   #" << endl;
+				cout << "#     This means you opened more then 2500 packs   #" << endl;
 				cout << "####################################################" << endl;
 				heirloom = (final / 5);
 				SetConsoleTextAttribute(color, 10);
@@ -968,7 +999,7 @@ int main() {
 					final = final - 2000;
 					cout << "####################################################" << endl;
 					cout << "#          You alredy had four heirlooms           #" << endl;
-					cout << "#      This means you opened more then 2000 packs   #" << endl;
+					cout << "#     This means you opened more then 2000 packs   #" << endl;
 					cout << "####################################################" << endl;
 					heirloom = (final / 5);
 					SetConsoleTextAttribute(color, 10);
@@ -984,7 +1015,7 @@ int main() {
 						final = final - 1500;
 						cout << "####################################################" << endl;
 						cout << "#          You alredy had three heirlooms          #" << endl;
-						cout << "#      This means you opened more then 1500 packs   #" << endl;
+						cout << "#     This means you opened more then 1500 packs   #" << endl;
 						cout << "####################################################" << endl;
 						heirloom = (final / 5);
 						SetConsoleTextAttribute(color, 10);
@@ -1000,7 +1031,7 @@ int main() {
 							final = final - 1000;
 							cout << "####################################################" << endl;
 							cout << "#           You alredy had two heirlooms           #" << endl;
-							cout << "#      This means you opened more then 1000 packs   #" << endl;
+							cout << "#     This means you opened more then 1000 packs   #" << endl;
 							cout << "####################################################" << endl;
 							heirloom = (final / 5);
 							SetConsoleTextAttribute(color, 10);
@@ -1040,6 +1071,6 @@ int main() {
 				}
 			}
 		}
-	} 
+	}
 	restarting();
 }
