@@ -1,2 +1,6 @@
-This project is mostly for Apex legends fans that are desperate and want the heirloom so much.
-With this program you can find out how many apex packs you need to finally get that heirloom.
+Apex Legends Loot Pack Calculator
+
+This is a simple open-source app made in c++.
+
+It's made for players who play Apex Legends - Battle Royale from Respawn Entertainment. 
+With this application, you will be able to find out more or less how many packs you need for those sweet heirloom shards.
