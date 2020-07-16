@@ -898,7 +898,7 @@ void event05() {
 	cout << "How many packs did you buy in the Lost Treasures Event [max. 24]: "; cin >> event05_pack;
 	if (event05_pack <= 24) {
 		SetConsoleTextAttribute(color, 2);
-		cout << "[+" << event01_pack << " pack/s from Lost Treasures Event]" << endl;
+		cout << "[+" << event05_pack << " pack/s from Lost Treasures Event]" << endl;
 		SetConsoleTextAttribute(color, 11);
 		cout << "\n";
 	}
